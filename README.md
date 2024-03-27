@@ -1,8 +1,8 @@
-# Standup Practice MVP
+# Standup Comedy Practice with AI
 
 ![Cover Image](./public/cover.webp)
 
-A minimal viable product (MVP) app designed for standup comedians to practice their sets with AI-generated crowd reactions. 
+A simple app to practice your standup routine with AI-generated crowd reactions. 
 
 Built upon the `nextjs-live-starter` by Deepgram, this app uses Deepgram's real-time transcription services to quickly transcribe your jokes, which are then categorized by OpenAI's GPT-3.5 Turbo into various reactions (funny, controversial, neutral, sad, applause, etc.). Based on the categorization, the app plays corresponding stock audio clips to simulate crowd reactions to your performance.
 
