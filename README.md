@@ -1,52 +1,37 @@
-# Live Audio Next.js Starter
+# Standup Practice MVP
 
-[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4)
+A minimal viable product (MVP) app designed for standup comedians to practice their sets with AI-generated crowd reactions. Built upon the `nextjs-live-starter` by Deepgram, this app uses Deepgram's real-time transcription services to quickly transcribe your jokes, which are then categorized by OpenAI's GPT-3.5 Turbo into various reactions (funny, controversial, neutral, sad, applause, etc.). Based on the categorization, the app plays corresponding stock audio clips to simulate crowd reactions to your performance.
 
-This sample demonstrates interacting with Deepgram from Next.js to transcribe your microphone audio. It uses the Deepgram JavaScript SDK. This was originally a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Quick Setup
 
-## Demo features
+### Prerequisites
 
-- Persistent connection to Deepgram
-  - This demo will automatically reconnect in the event the websocket disconnects.
-- Microphone audio buffer
-  - The microphone audio is buffered and instantly sent to Deepgram. In the event the socket disconnects, the audio continues to buffer and then catches up once the connection is re-established.
-- Uses temporary API keys
-  - This demo mints it's own temporary short-lived (a few seconds), limited scope API keys in a server route, to protect your main API key.
-- Browser-side transcription
-  - The connection to Deepgram is established directly from the client, and does not use a server-side component to transcribe the audio.
+- An API key from [Deepgram](https://deepgram.com/)
+- An API key from [OpenAI](https://openai.com/)
 
-## What is Deepgram?
+### Configuration
 
-[Deepgram](https://deepgram.com/) is a foundational AI company providing speech-to-text and language understanding capabilities to make data readable and actionable by human or machines.
+Create a `.env.local` file in the root directory of your project and add your API keys:
 
-## Sign-up to Deepgram
+```plaintext
+OPENAI_API_KEY=<your-openai-api-key>
+DEEPGRAM_API_KEY=<your-deepgram-api-key>
+```
 
-Before you start, it's essential to generate a Deepgram API key to use in this project. [Sign-up now for Deepgram and create an API key](https://console.deepgram.com/signup?jump=keys).
-
-## Quickstart
-
-### Manual
-
-Follow these steps to get started with this starter application.
-
-#### Clone the repository
-
-Go to GitHub and [clone the repository](https://github.com/deepgram-starters/live-nextjs-starter).
-
-#### Install dependencies
+## Installation
 
 Install the project dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
-#### Edit the config file
+#### Running the App
 
-Copy the code from `sample.env.local` and create a new file called `.env.local`. Paste in the code and enter your API key you generated in the [Deepgram console](https://console.deepgram.com/).
+To start the application, run:
 
 ```bash
-DEEPGRAM_API_KEY=%api_key%
+pnpm run dev
 ```
 
 #### Run the application
@@ -57,21 +42,15 @@ Once running, you can [access the application in your browser](http://localhost:
 npm run dev
 ```
 
-## Issue Reporting
+Access it via http://localhost:3000 in your browser.
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Security Policy](./SECURITY.md) details the procedure for contacting Deepgram.
+## Deployment
 
-## Getting Help
+You can deploy this app on Vercel or another platform of your choice.
 
-We love to hear from you so if you have questions, comments or find a bug in the project, let us know! You can either:
+## Feedback and Contributions
 
-- [Open an issue in this repository](https://github.com/deepgram-starters/live-nextjs-starter/issues/new)
-- [Join the Deepgram Github Discussions Community](https://github.com/orgs/deepgram/discussions)
-- [Join the Deepgram Discord Community](https://discord.gg/xWRaCDBtW4)
-
-## Author
-
-[Deepgram](https://deepgram.com)
+We appreciate feedback and ideas on improving the app further. Notably, we're working on adjusting the timing of reactions to make them appear more natural and adding more granular categories for crowd responses.
 
 ## License
 
