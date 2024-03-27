@@ -4,7 +4,7 @@
 
 A simple app to practice your standup routine with AI-generated crowd reactions. 
 
-Built upon the `nextjs-live-starter` by Deepgram, this app uses Deepgram's real-time transcription services to quickly transcribe your jokes, which are then categorized by OpenAI's GPT-3.5 Turbo into various reactions (funny, controversial, neutral, sad, applause, etc.). Based on the categorization, the app plays corresponding stock audio clips to simulate crowd reactions to your performance.
+Built upon the `nextjs-live-starter` by Deepgram, this app uses Deepgram's real-time transcription services to quickly transcribe your jokes, which are then categorized by OpenAI's gpt-3.5-turbo into various reactions (funny, controversial, neutral, sad, applause, etc.). Based on the categorization, the app plays corresponding stock audio clips to simulate crowd reactions to your performance.
 
 You can see a demo of this app working [here]([http://your-placeholder-link.com](https://www.loom.com/share/2a8e84ba72a84bbe88f7f06b8ce69b31?sid=db1b35e5-5f96-4a7c-8fc8-58398e712232)).
 
