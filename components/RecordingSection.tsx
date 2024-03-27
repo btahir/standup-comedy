@@ -158,7 +158,7 @@ export default function RecordingSection() {
       } catch {
         console.error('Error parsing judgment response')
       }
-    }, 300),
+    }, 1000),
     []
   )
 
